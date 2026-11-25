@@ -22,7 +22,7 @@ _GET_DEFINITION_SIZE = 0x01
 _GET_DEFINITION_PAGE = 0x02
 _GET_UNLOCK_STATUS = 0x05
 _VIAL_PROTOCOL = 6
-_MAINTENANCE_KEYCODES = range(0x7C00, 0x7C05)
+MAINTENANCE_KEYCODES = range(0x7C00, 0x7C05)
 
 
 class DeviceError(RuntimeError):
@@ -188,7 +188,7 @@ class VialDevice:
         ):
             if type(value) is not int or not 0 <= value < stop:
                 raise ValueError(f"{name} must be an integer in [0, {stop}).")
-        if code in _MAINTENANCE_KEYCODES:
+        if code in MAINTENANCE_KEYCODES:
             raise ValueError("Bootloader, reboot, debug, EEPROM-clear, and make keycodes are disabled.")
 
         self._check_unlock_status()

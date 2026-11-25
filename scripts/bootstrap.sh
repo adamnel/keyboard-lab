@@ -17,6 +17,7 @@ venv_python="$root/.venv/bin/python"
 "$venv_python" -m pip install --no-deps -r "$root/scripts/build-requirements.lock"
 "$venv_python" -m pip install --no-deps -r "$root/scripts/runtime-requirements.lock"
 "$venv_python" -m pip check
+git -C "$root" config core.hooksPath .githooks
 
 url=$("$venv_python" -c 'import json,sys; print(json.load(open(sys.argv[1]))["repository"])' "$lock")
 commit=$("$venv_python" -c 'import json,sys; print(json.load(open(sys.argv[1]))["commit"])' "$lock")

@@ -1,0 +1,8 @@
+# Decisions the keymap must keep; `*` is free. `scripts/lab` refuses a keymap that breaks one.
+# To change a decision, edit this file in the same commit as keymap.txt.
+
+layer 0  # QWERTY letters stay put; left thumb is Space / hold Cmd+Ctrl; layer keys on the middle thumbs
+*       KC_Q    KC_W    KC_E    KC_R    KC_T    *        *       KC_Y    KC_U    KC_I    KC_O    KC_P    *
+*       KC_A    KC_S    KC_D    KC_F    KC_G    *        *       KC_H    KC_J    KC_K    KC_L    *       *
+*       KC_Z    KC_X    KC_C    KC_V    KC_B                     KC_N    KC_M    *       *       *       *
+                                *       TL_LOWR MT(MOD_LCTL|MOD_LGUI,KC_SPC)  *       TL_UPPR *
