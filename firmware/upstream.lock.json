@@ -1,0 +1,44 @@
+{
+  "repository": "https://github.com/vial-kb/vial-qmk.git",
+  "commit": "dd43959ae5c08d8a28d38a1acf7b04e86b14a344",
+  "target": "crkbd/rev4_1/standard",
+  "keymap": "adam_vial_trial",
+  "submodules": {
+    "lib/chibios": {
+      "commit": "8bd61b804303f1614d574546c2dd735eeabb09f5",
+      "build": true
+    },
+    "lib/chibios-contrib": {
+      "commit": "3ac181e4ca5cafddaf8b472baa1d09c2b24c77b6",
+      "build": true
+    },
+    "lib/chibios-contrib/ext/mcux-sdk": {
+      "commit": "102c27d7cc2aaac87c133702e7829a105e0cb433",
+      "build": false
+    },
+    "lib/googletest": {
+      "commit": "e2239ee6043f73722e7aa812a459f54a28552929",
+      "build": false
+    },
+    "lib/lufa": {
+      "commit": "549b97320d515bfca2f95c145a67bd13be968faa",
+      "build": true
+    },
+    "lib/lvgl": {
+      "commit": "e19410f8f8a256609da72cff549598e0df6fa4cf",
+      "build": false
+    },
+    "lib/pico-sdk": {
+      "commit": "d0c5cac430cc955b65efa0e899748853d9a80928",
+      "build": true
+    },
+    "lib/printf": {
+      "commit": "c2e3b4e10d281e7f0f694d3ecbd9f320977288cc",
+      "build": true
+    },
+    "lib/vusb": {
+      "commit": "819dbc1e5d5926b17e27e00ca6d3d2988adae04e",
+      "build": false
+    }
+  }
+}

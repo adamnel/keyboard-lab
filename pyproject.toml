@@ -1,0 +1,18 @@
+[project]
+name = "keyboard-lab"
+version = "0.1.0"
+requires-python = ">=3.15,<3.16"
+dependencies = ["hid==1.0.9", "PyYAML==6.0.4"]
+
+[project.scripts]
+keyboard-lab = "keyboard_lab.cli:main"
+
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["keyboard_lab"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

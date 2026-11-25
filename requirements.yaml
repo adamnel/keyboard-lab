@@ -1,0 +1,69 @@
+version: 1
+requirements:
+  - id: HW-01
+    kind: invariant
+    statement: Preserve the 46-key Corne 4.1 matrix and eight layers.
+    check: geometry
+  - id: TYPE-01
+    kind: must
+    statement: Keep the QWERTY letters in their established physical positions while acclimating.
+    check: qwerty
+  - id: SPACE-01
+    kind: must
+    statement: Left inner thumb taps Space and holds left Command plus Control.
+    check: binding
+    position: left.thumb.inner
+    layer: 0
+    code: MT(MOD_LCTL | MOD_LGUI, KC_SPC)
+  - id: LAYER-01
+    kind: must
+    statement: Preserve dedicated number and symbol layer entry for now.
+    check: starter_layer_access
+  - id: MOD-01
+    kind: goal
+    statement: Command, Option, Control, and Shift combinations should be comfortable for left-hand plus trackpad work.
+    check: manual
+  - id: WM-01
+    kind: goal
+    statement: Workspace switching is frequent and must remain comfortable with the left hand alone.
+    check: manual
+  - id: LAUNCH-01
+    kind: goal
+    statement: Make frequent Command+Space, Raycast, and 1Password activation easy; app bindings remain to be confirmed.
+    check: manual
+  - id: TAB-01
+    kind: goal
+    statement: Support comfortable Command+number tab switching with layer access.
+    check: manual
+  - id: NAV-01
+    kind: goal
+    statement: Support real arrow events and character, word, line, paragraph, rectangular block, and document movement and selection; compare inverted T with HJKL and optional application Vi modes.
+    check: manual
+  - id: TERM-01
+    kind: goal
+    statement: Preserve terminal interrupts, history search, completion, punctuation, and editing operations.
+    check: manual
+  - id: DESIGN-01
+    kind: goal
+    statement: Preserve tool letters, grouping, auto layout, and useful modifier combinations; Space-held panning is not required.
+    check: manual
+  - id: VIEW-01
+    kind: goal
+    statement: Provide a quickly accessible reference reflecting the actual runtime keymap.
+    check: manual
+  - id: TIMING-01
+    kind: goal
+    statement: Space tap-hold must avoid unintended workspace switching during normal typing.
+    check: manual
+  - id: CONFLICT-01
+    kind: known-issue
+    statement: Command+Control+D still conflicts with Dictionary; changing the physical key does not resolve it.
+    check: manual
+preferences:
+  - Keep modifier complexity minimal while adapting to stagger.
+  - Prefer established patterns but do not inherit the prior Miryoku design.
+  - Space is primarily left-thumb; workspace use exceeds number entry.
+  - File and direct USB collaboration; no computer use.
+  - Routine edits should not require reflashing.
+  - Karabiner removal is preferred eventually but not yet done.
+  - BTT modifier-only moving and resizing are disabled for the trial.

@@ -1,0 +1,11 @@
+{
+  "vid": 18003,
+  "pid": 4,
+  "usage_page": 65376,
+  "usage": 97,
+  "vial_uid": "4cf5a7243901b58e",
+  "descriptor_sha256": "6c7dcecb14ca0a6259b42996a32ae788b966fd62cf9514ceaeae4d6596076997",
+  "layers": 8,
+  "rows": 8,
+  "cols": 7
+}
